@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: discoveryserver
+  name: discovery-service
   namespace: argocd
 spec:
   project: ebanking
   source:
     repoURL: https://github.com/Khadija-Laamiri/e-banking-api-manifest
     targetRevision: HEAD
-    path: discoveryserver
+    path: discovery-service
   destination:
     server: https://kubernetes.default.svc
     namespace: ebanking
