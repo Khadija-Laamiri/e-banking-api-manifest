@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: payment-transaction-container
-          image: enamifatimazahrae2001/payment-transaction:v0.5
+          image: enamifatimazahrae2001/payment-transaction:v0.6
           ports:
             - containerPort: 8081
 
