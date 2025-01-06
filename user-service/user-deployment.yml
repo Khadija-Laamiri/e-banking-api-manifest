@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: user-container
-          image: enamifatimazahrae2001/user:v.0
+          image: enamifatimazahrae2001/user:v0.15
           ports:
             - containerPort: 8083
 
