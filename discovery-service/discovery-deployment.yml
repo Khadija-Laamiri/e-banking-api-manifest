@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: discovery-container
-          image: enamifatimazahrae2001/discovery
+          image: enamifatimazahrae2001/discovery:v0.1
           ports:
             - containerPort: 8761
 
