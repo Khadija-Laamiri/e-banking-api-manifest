@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: discovery-container
-          image: laamirikhadija/discovery-service
+          image: enamifatimazahrae2001/discovery
           ports:
             - containerPort: 8761
 
