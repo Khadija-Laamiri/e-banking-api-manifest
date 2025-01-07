@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: operators-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: operators
+  template:
+    metadata:
+      labels:
+        app: operators
+    spec:
+      containers:
+        - name: user-container
+          image: enamifatimazahrae2001/operators:v0.1
+          ports:
+            - containerPort: 8084
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: operators-service
+spec:
+  selector:
+    app: operators
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8084
+  clusterIP: None
