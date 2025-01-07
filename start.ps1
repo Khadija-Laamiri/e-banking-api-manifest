@@ -2,11 +2,12 @@
 $yamlFiles = @(
     "argocd-init.yml",
     "postgres-application.yml",
-     "discovery-application.yml",
-     "gateway-application.yml",
+    "discovery-application.yml",
+    "gateway-application.yml",
     "user-application.yml",
     "facture-application.yml",
-    "payment-transaction-application.yml"
+    "payment-transaction-application.yml",
+    "operators-application.yml"
 
 )
 
