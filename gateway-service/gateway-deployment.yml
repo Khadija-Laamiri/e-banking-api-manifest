@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-gateway-container
-          image: enamifatimazahrae2001/gateway:v0.2
+          image: enamifatimazahrae2001/gateway:v0.3
           ports:
             - containerPort: 8762
 
