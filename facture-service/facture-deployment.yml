@@ -13,10 +13,10 @@ spec:
         app: facture
     spec:
       containers:
-        - name: user-container
+        - name: facture-container
           image: enamifatimazahrae2001/facture:v0.4
           ports:
-            - containerPort: 8084
+            - containerPort: 8083
 
 ---
 apiVersion: v1
@@ -30,5 +30,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8084
+      targetPort: 8083
   clusterIP: None

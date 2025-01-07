@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: payment-transaction
+  name: payment-transaction-service
   namespace: argocd
 spec:
   project: ebanking
   source:
     repoURL: https://github.com/Khadija-Laamiri/e-banking-api-manifest
     targetRevision: HEAD
-    path: user
+    path: payment-transaction-service
   destination:
     server: https://kubernetes.default.svc
     namespace: ebanking

@@ -16,7 +16,7 @@ spec:
         - name: payment-transaction-container
           image: enamifatimazahrae2001/payment-transaction:v0.6
           ports:
-            - containerPort: 8081
+            - containerPort: 8085
 
 ---
 apiVersion: v1
@@ -30,5 +30,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8081
+      targetPort: 8085
   clusterIP: None
