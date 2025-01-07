@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: facture
+  name: facture-service
   namespace: argocd
 spec:
   project: ebanking
   source:
     repoURL: https://github.com/Khadija-Laamiri/e-banking-api-manifest
     targetRevision: HEAD
-    path: user
+    path: facture-service
   destination:
     server: https://kubernetes.default.svc
     namespace: ebanking

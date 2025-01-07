@@ -16,7 +16,7 @@ spec:
         - name: user-container
           image: enamifatimazahrae2001/user:v0.17
           ports:
-            - containerPort: 8083
+            - containerPort: 8099
 
 ---
 apiVersion: v1
@@ -30,5 +30,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8082
+      targetPort: 8099
   clusterIP: None

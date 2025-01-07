@@ -16,7 +16,7 @@ spec:
         - name: api-gateway-container
           image: enamifatimazahrae2001/gateway:v0.2
           ports:
-            - containerPort: 8080
+            - containerPort: 8762
 
 ---
 apiVersion: v1
@@ -30,5 +30,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 8762
 
