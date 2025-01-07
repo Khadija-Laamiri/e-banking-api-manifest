@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: user-container
-          image: enamifatimazahrae2001/user:v0.17
+          image: enamifatimazahrae2001/user:v0.33
           ports:
             - containerPort: 8099
 
