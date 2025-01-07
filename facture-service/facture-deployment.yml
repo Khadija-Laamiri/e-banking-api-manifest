@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: facture-container
-          image: enamifatimazahrae2001/facture:v0.4
+          image: enamifatimazahrae2001/facture:v0.5
           ports:
             - containerPort: 8083
 
